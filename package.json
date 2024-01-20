@@ -1,0 +1,26 @@
+{
+  "name": "crump",
+  "version": "0.0.1",
+  "description": "A CLI for creating and customizing your own boilerplate codes that you can pull in any of your projects.",
+  "bin": {
+    "crump": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsup src/cli.ts --format cjs --minify --dts",
+    "lint": "tsc"
+  },
+  "keywords": [
+    "cli"
+  ],
+  "author": "vishal kamath <vishalkamath853@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  }
+}
